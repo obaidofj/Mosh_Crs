@@ -1,3 +1,4 @@
+import { SummaryPipe } from './summary.pipe';
 import { AuthorsService } from './authors.service';
 import { CoursesService } from './courses.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -8,6 +9,8 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
 import { CourseComponent } from './course/course.component';
 import { AuthorsComponent } from './authors/authors.component';
+import { FavoriteComponent } from './favorite/favorite.component';
+import { BootstrapPanelComponent } from './bootstrap-panel/bootstrap-panel.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +18,9 @@ import { AuthorsComponent } from './authors/authors.component';
     CoursesComponent,
     CourseComponent,
     AuthorsComponent,
+    SummaryPipe,
+    FavoriteComponent,
+    BootstrapPanelComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [CoursesService, AuthorsService],

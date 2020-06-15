@@ -27,11 +27,15 @@ import { Component } from '@angular/core';
     {{ course.rating | number: '2.1-1' }}<br />
     {{ course.studants | number }}<br />
     {{ course.price | currency: 'INS':true:'3.2-2' }}<br />
-    {{ course.releaseDate | date: 'mediumDate' }}<br />`,
+    {{ course.releaseDate | date: 'mediumDate' }}<br />
+    <hr />
+    {{ txtstr | summary }}`,
 })
 export class CoursesComponent {
   title = 'List of courses';
   courses;
+  txtstr =
+    'loreum text jhlh kkklk jlklkj akljl jklja lkjljk klja kljl dnfkdnsaf njkdfndsjf sjkdfs kj dfad';
   email = 'email@examp.com';
   isActive = false;
   course = {

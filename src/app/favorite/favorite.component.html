@@ -1,0 +1,12 @@
+<p (click)="onClick()">
+  favorite or no:
+  <span
+    (click)="onClick()"
+    [class.glyphicon-star-empty]="!isFavorite"
+    [class.glyphicon-star]="isFavorite"
+    class="glyphicon"
+  >
+  </span>
+  <span *ngIf="isFavorite">Favarite</span>
+  <span *ngIf="!isFavorite">Not Favarite</span>
+</p>

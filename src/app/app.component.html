@@ -1,5 +1,18 @@
 <h1>Angular</h1>
 {{ title }}
+<bootstrap-panel>
+  <ng-container class="heading">Heading</ng-container>
+  <ng-container class="body">
+    <h2>Body</h2>
+    <p>Some content here ...</p>
+  </ng-container>
+</bootstrap-panel>
+<hr />
+<favorite
+  [isFavorite]="post.isFavorite"
+  (change)="isFavoriteChanged($event)"
+></favorite>
+<hr />
 <courses></courses>
 <app-authors></app-authors>
 

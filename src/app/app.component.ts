@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app hello-world';
   colspan = 2;
+  post = {
+    title: 'Title',
+    isFavorite: true,
+  };
+
+  isFavoriteChanged(isFav) {
+    console.log('Favorite Changed', isFav);
+  }
 }
