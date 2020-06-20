@@ -29,7 +29,7 @@ import { Component } from '@angular/core';
     {{ course.price | currency: 'INS':true:'3.2-2' }}<br />
     {{ course.releaseDate | date: 'mediumDate' }}<br />
     <hr />
-    {{ txtstr | summary }}`,
+    {{ txtstr | summary }} `,
 })
 export class CoursesComponent {
   title = 'List of courses';

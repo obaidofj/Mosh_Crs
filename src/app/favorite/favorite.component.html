@@ -1,9 +1,14 @@
 <p (click)="onClick()">
   favorite or no:
+  <!--[class.glyphicon-star-empty]="!isFavorite"
+    [class.glyphicon-star]="isFavorite" -->
+
   <span
     (click)="onClick()"
-    [class.glyphicon-star-empty]="!isFavorite"
-    [class.glyphicon-star]="isFavorite"
+    [ngClass]="{
+      'glyphicon-star': isFavorite,
+      'glyphicon-star-empty': !isFavorite
+    }"
     class="glyphicon"
   >
   </span>
