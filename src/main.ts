@@ -13,5 +13,5 @@ platformBrowserDynamic()
   .bootstrapModule(AppModule)
   .catch((err) => console.error(err));
 
-let point = new Point(1, 6);
+const point = new Point(1, 6);
 point.draw();

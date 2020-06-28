@@ -10,7 +10,7 @@ export class Point {
   }
 
   set x(xval) {
-    if (xval < 0) throw new Error('value can not be less than zero');
+    if (xval < 0) { throw new Error('value can not be less than zero'); }
 
     this._x = xval;
   }

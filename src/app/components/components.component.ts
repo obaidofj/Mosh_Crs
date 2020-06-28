@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComponentsComponent implements OnInit {
   constructor() {}
-
-  ngOnInit(): void {}
   title = 'app hello-world';
   colspan = 2;
   post = {
@@ -25,17 +23,19 @@ export class ComponentsComponent implements OnInit {
     { id: 3, name: 'course3' },
   ];
 
+  ngOnInit(): void {}
+
   isFavoriteChanged(isFav) {
     console.log('Favorite Changed', isFav);
   }
 
   onAdd(cval) {
-    let leng = this.coursesData.length;
+    const leng = this.coursesData.length;
     this.coursesData.push({ id: leng + 1, name: cval });
   }
 
   onRemove(crs) {
-    let ind = this.coursesData.indexOf(crs);
+    const ind = this.coursesData.indexOf(crs);
     this.coursesData.splice(ind, 1);
   }
   onUpdate(crsd) {

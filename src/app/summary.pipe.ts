@@ -6,9 +6,9 @@ import { pipe } from 'rxjs';
 })
 export class SummaryPipe implements PipeTransform {
   transform(value: string, limit?: number) {
-    if (!value) return null;
+    if (!value) { return null; }
 
-    let actLimit = limit ? limit : 50;
+    const actLimit = limit ? limit : 50;
     return value.substr(0, actLimit) + '...';
   }
 }

@@ -61,8 +61,8 @@ export class CoursesComponent {
     console.log('div clicked');
   }
   onKeyUP(txtv) {
-    //console.log(' enter key pressed  ,text: ', $event.target.value);
-    //console.log(' enter key pressed ,text:', txtv);
+    // console.log(' enter key pressed  ,text: ', $event.target.value);
+    // console.log(' enter key pressed ,text:', txtv);
     console.log(this.email);
   }
 }
